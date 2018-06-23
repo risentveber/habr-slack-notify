@@ -1,0 +1,6 @@
+{
+    "INTERVAL": "<milliseconds>",
+    "BASE_RSS_PATH": "https://habr.com/rss/search/",
+    "SLACK_HOOK_URL": "<slack_webhook_url>",
+    "KEYWORDS": ["your", "words", "go", "here"]
+}

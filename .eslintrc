@@ -1,0 +1,22 @@
+{
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true,
+            "modules": true
+        }
+    },
+    "extends" : [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "airbnb-base"
+    ],
+    "rules" : {
+        "arrow-body-style" : "warn",
+        "class-methods-use-this": "warn",
+        "import/prefer-default-export": "warn"
+    },
+    "globals": {
+        "fetch": true
+    }
+}
