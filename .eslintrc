@@ -12,6 +12,7 @@
         "airbnb-base"
     ],
     "rules" : {
+        "no-console": 0,
         "arrow-body-style" : "warn",
         "class-methods-use-this": "warn",
         "import/prefer-default-export": "warn"

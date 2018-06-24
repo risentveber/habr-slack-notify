@@ -25,9 +25,9 @@ function send(link) {
 }
 
 
-setInterval(() => {
+function checkNewPosts() {
   Promise.all(c.KEYWORDS.map(word => new Promise((resolve) => {
-    feed(`${c.BASE_RSS_PATH}?q=${word}`, (err, list) => {
+    feed(`${c.BASE_RSS_PATH}?q=${word}&target_type=posts&order_by=date`, (err, list) => {
       if (err) {
         console.error(err);
         resolve([]);
@@ -42,5 +42,9 @@ setInterval(() => {
       }
     }));
   });
-}, c.INTERVAL);
+}
+
+checkNewPosts();
+
+setInterval(checkNewPosts, c.INTERVAL);
 
